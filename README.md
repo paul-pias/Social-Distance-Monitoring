@@ -32,7 +32,7 @@ If you want to use YOLACT++, compile deformable convolutional layers (from [DCNv
 ```
 
 In the official Yolact repository there are several pre-trained model available.
-|    Image Size            |Model File                         |Config                         |
+|    Image Size            |Model File (-m)                       |Config (-c)                   |
 |----------------|-------------------------------|-----------------------------|
 |550|[yolact_resnet50_54_800000.pth](https://drive.google.com/file/d/1yp7ZbbDwvMiFJEq4ptVKTYTI2VeRDXl0/view?usp=sharing)            |yolact_resnet50            |
 |550          |[yolact_darknet53_54_800000.pth](https://drive.google.com/file/d/1dukLrTzZQEuhzitGkHaGjphlmRJOjVnP/view?usp=sharing)           |yolact_darknet53            |
