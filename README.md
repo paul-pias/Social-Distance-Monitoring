@@ -74,7 +74,7 @@ Social Distancing is a way of protecting yourself and others around you by knowi
  
 To measure distance between two person eucledian distance was used in this work. **Euclidean distance** or **Euclidean metric** is the "ordinary" [straight-line](https://en.wikipedia.org/wiki/Straight_line "Straight line")  [distance](https://en.wikipedia.org/wiki/Distance "Distance") between two points in [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space "Euclidean space"). 
 
-The **Euclidean distance** between two points **p** and **q** is the length of the [line segment](https://en.wikipedia.org/wiki/Line_segment "Line segment") connecting them ({\displaystyle {\overline {\mathbf {p} \mathbf {q} }}}![\overline{\mathbf{p}\mathbf{q}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/6d397a90d8e00a9fbb6e7eb908cda31009fde6ee)).
+The **Euclidean distance** between two points **p** and **q** is the length of the [line segment](https://en.wikipedia.org/wiki/Line_segment "Line segment") connecting them [\overline{\mathbf{p}\mathbf{q}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/6d397a90d8e00a9fbb6e7eb908cda31009fde6ee)).
 In the [Euclidean plane](https://en.wikipedia.org/wiki/Euclidean_plane "Euclidean plane"), if **p** = (_p_1, _p_2) and **q** = (_q_1, _q_2) then the distance is given by
 
 ![{\displaystyle d(\mathbf {p} ,\mathbf {q} )={\sqrt {(q_{1}-p_{1})^{2}+(q_{2}-p_{2})^{2}}}.}](https://wikimedia.org/api/rest_v1/media/math/render/svg/4febdae84cbc320c19dd13eac5060a984fd438d8)
