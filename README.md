@@ -81,3 +81,7 @@ In the [Euclidean plane](https://en.wikipedia.org/wiki/Euclidean_plane "Euclidea
 
 This formula was applied in the **draw_distance(boxes)** function where we got all the bounding boxes of person class in a given frame from the model where each bounding is a regression value consisting **(x,y,w,h)** . Where x and y represent 2 co-ordinates of the person and w & h represent widh and height correspondingly. All combinations of boxes were found to calculate the distance between them. 
 
+### Acknowlegement 
+Thanks to **Daniel Bolya** et. el for introducing Single Shot detection (SSD) implementation for segmentation in  [YOLACT](https://arxiv.org/abs/1904.02689) & [YOLACT++](https://arxiv.org/abs/1912.06218) as it becomes less memory hungry. 
+
+However, for more details on Object detection and Image understanding you can also visit [this](https://github.com/paul-pias/Object-Detection-and-Distance-Measurement) repo.
