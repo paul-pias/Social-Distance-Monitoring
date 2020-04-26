@@ -3,7 +3,8 @@
 ## Introduction
 This repository holds the implementation of monitoring social distancing implied for COVID-19 using  [YOLACT: Real-time Instance Segmentation](https://arxiv.org/abs/1904.02689)) for object detection. 
 
-![Social Distancing Demo](http://muizzer07.pythonanywhere.com/media/files/social.gif)
+<img src="/data/social.gif?raw=true" width="200px">
+
 ## User Guideline
 **System Requirement**
 - For better performance you will cuda version 10 or 10.1
