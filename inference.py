@@ -68,22 +68,6 @@ if torch.cuda.is_available():
 
 # print("Initial GPU Usage")
 # gpu_usage()
-# fast_nms = args.fast_nms
-# cross_class_nms =True
-
-# config = args.config
-# print('Config specified. Parsed %s from the file name.\n' % config)
-# set_cfg(config)
-
-# print('Loading model...', end='')
-# trained_model = args.model
-# model = Yolact()
-# model.load_weights(trained_model)
-# model.detect.use_fast_nms = fast_nms
-# model.detect.use_cross_class_nms = cross_class_nms
-# model.eval()  
-# model = model.to(device,non_blocking=True)
-# print(' Done.')
 
 
 cfg.mask_proto_debug = False
@@ -96,9 +80,9 @@ color_cache = defaultdict(lambda: {})
 log = {"total_person": 0,"total_person_in_red_zone": 0 , "total_person_in_green_zone": 0}
 
 
-##Setting video codecs to save frames after operation
-fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-out = cv2.VideoWriter("monitor.avi", fourcc, 20.0, (1280, 720))
+    ##Setting video codecs to save frames after operation
+# fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+# out = cv2.VideoWriter("monitor.avi", fourcc, 20.0, (1280, 720))
 
 class SocialDistance:
     def __init__(self,id):
@@ -108,7 +92,7 @@ class SocialDistance:
         self.height = 720#1080#
         self.display_lincomb = False
         self.crop = True
-        self.score_threshold = 0.15
+        self.score_threshold = 0.40
         self.top_k = 30
         self.display_masks = True
         self.display_fps = False
@@ -318,7 +302,7 @@ class SocialDistance:
             ## Desiging the frame with necessary infos
             title = "Social Distance Monitoring - COVID19"
             total_person = "Total = {}".format(log["total_person"])
-            # print(log)
+            
             red_zone = "High Risk = {}".format(log["total_person_in_red_zone"])
             green_zone = "Safe Distance = {}".format(log["total_person_in_green_zone"])
             notification_bar_thickness = 3
@@ -326,7 +310,7 @@ class SocialDistance:
             overlay = inputs.copy()
             background = inputs.copy()
             opacity = 0.4
-            # print(int(self.height*.139))
+            
             
             cv2.rectangle(overlay, (0, 0), (self.width, int(self.height*.139)), (255,255,255), -1)
             cv2.rectangle(overlay, (0, int(self.height*.8545)), (int(self.width*.3127), self.height), (255,255,255), -1)
@@ -348,8 +332,8 @@ class SocialDistance:
                 images = images.to(device)
                 preds = self.model(images)
                 frame = self.prep_display(preds, inputs, None, None, undo_transform=False)
+            # out.write(frame)                      ## Use it if you want write your output in a video
             
-            # out.write(frame)
             
             if cv2.waitKey(1)&0xFF == ord('q'):
                 break
