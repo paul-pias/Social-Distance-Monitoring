@@ -10,25 +10,25 @@ This repository holds the implementation of monitoring social distancing implied
 
 **Installation**
 ```
-	$ pip install -r requirements.txt
+    $ pip install -r requirements.txt
  ```
  #### For the installation of torch using "pip" kindly follow the instructions from [Pytorch](https://pytorch.org/)
 
 First, you need to clone the repository using gitbash (if gitbash is already installed) or you can download the zip file.
 ```
-	$ git clone https://github.com/paul-pias/Social-Distance-Monitoring.git
+    $ git clone https://github.com/paul-pias/Social-Distance-Monitoring.git
 ```
 
 If want to see your output in your browser execute the "server.py" script or else run "inference.py" to execute it locally.
 
 If you want to run the inference on a ip camera need to use **WebcamVideoStream** with the following command. 
 ```
-	"rtsp://assigned_name_of_the_camera:assigned_password@camer_ip/"
+    "rtsp://assigned_name_of_the_camera:assigned_password@camer_ip/"
 ```
 If you want to use YOLACT++, compile deformable convolutional layers (from [DCNv2](https://github.com/CharlesShang/DCNv2/tree/pytorch_1.0)). Make sure you have the latest CUDA toolkit installed from [NVidia's Website](https://developer.nvidia.com/cuda-toolkit).
 ```
-	cd external/DCNv2
-	python setup.py build develop
+    cd external/DCNv2
+    python setup.py build develop
 ```
 
 In the official Yolact repository there are several pre-trained model available.
