@@ -49,4 +49,23 @@ Download the pre-trained weights and save in the folder **weights**, then from y
 ```
     python inference.py -m=weights/yolact_base_54_800000.pth -c=yolact_base -i 0
 ```
-Here 0 as id passed if you want to run the inference on webcam feed. If you don't parse any argument it will run with the default values. 
+Here 0 as id passed if you want to run the inference on webcam feed. If you don't parse any argument it will run with the default values. You can tweak the following values according to your preference. 
+
+
+|      Input          |Value                        |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|width, height |1280 x 720 |              
+|display_lincomb         |`False             
+|crop          |True 	| For better segmentation use this flag as True
+|score_threshold |0.15  | Higher the value better the performace          
+|top_k         | 30     | At max how many objects will the model consider to detect in a given frame        
+|display_masks          |`True` | Draw segmentation 
+|display_fps |False                        
+|display_text          |True
+|display_bboxes         |`True             
+|display_scores           |False
+|fast_nms |True            
+|cross_class_nms         | True             
+|display_text          |True
+
+
