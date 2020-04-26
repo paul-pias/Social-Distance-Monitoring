@@ -40,3 +40,13 @@ In the official Yolact repository there are several pre-trained model available.
 |700|[yolact_im700_54_800000.pth](https://drive.google.com/file/d/1lE4Lz5p25teiXV-6HdTiOJSnS7u7GBzg/view?usp=sharing)            |yolact_im700            |
 |550         |[yolact_plus_resnet50_54_800000.pth](https://drive.google.com/file/d/1ZPu1YR2UzGHQD0o1rEqy-j5bmEm3lbyP/view?usp=sharing)            |yolact_plus_resnet50            |
 |550          |[yolact_plus_base_54_800000.pth](https://drive.google.com/file/d/15id0Qq5eqRbkD-N3ZjDZXdCvRyIaHpFB/view?usp=sharing)|yolact_plus_base|
+
+
+### Things to consider
+
+Download the pre-trained weights and save in the folder **weights**, then from your terminal run the following command based on your preference.
+
+```
+    python inference.py -m=weights/yolact_base_54_800000.pth -c=yolact_base -i 0
+```
+Here 0 as id passed if you want to run the inference on webcam feed. If you don't parse any argument it will run with the default values. 
