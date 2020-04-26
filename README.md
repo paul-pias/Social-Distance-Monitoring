@@ -3,6 +3,7 @@
 ## Introduction
 This repository holds the implementation of monitoring social distancing implied for COVID-19 using  [YOLACT: Real-time Instance Segmentation](https://arxiv.org/abs/1904.02689)) for object detection. 
 
+[![N|Solid](http://muizzer07.pythonanywhere.com/media/files/social.gif)
 ## User Guideline
 **System Requirement**
 - For better performance you will cuda version 10 or 10.1
@@ -84,4 +85,4 @@ This formula was applied in the **draw_distance(boxes)** function where we got a
 ### Acknowlegement 
 Thanks to **Daniel Bolya** et. el for introducing Single Shot detection (SSD) implementation for segmentation in  [YOLACT](https://arxiv.org/abs/1904.02689) & [YOLACT++](https://arxiv.org/abs/1912.06218) as it becomes less memory hungry. 
 
-However, for more details on Object detection and Image understanding you can also visit [this](https://github.com/paul-pias/Object-Detection-and-Distance-Measurement) repo.
+However, for more details on Object detection and Image understanding you can also visit [this repo](https://github.com/paul-pias/Object-Detection-and-Distance-Measurement) .
