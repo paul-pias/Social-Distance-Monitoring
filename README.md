@@ -78,5 +78,6 @@ The **Euclidean distance** between two points **p** and **q** is the length of t
 In the [Euclidean plane](https://en.wikipedia.org/wiki/Euclidean_plane "Euclidean plane"), if **p** = (_p_1, _p_2) and **q** = (_q_1, _q_2) then the distance is given by
 
 ![{\displaystyle d(\mathbf {p} ,\mathbf {q} )={\sqrt {(q_{1}-p_{1})^{2}+(q_{2}-p_{2})^{2}}}.}](https://wikimedia.org/api/rest_v1/media/math/render/svg/4febdae84cbc320c19dd13eac5060a984fd438d8)
-This formula was applied in the ** draw_distance(boxes)** function where we got all the bounding boxes of person class in a given frame from the model where each bounding is a regression value consisting **(x,y,w,h)** . Where x and y represent 2 co-ordinates of the person and w & h represent widh and height correspondingly. All combinations of boxes were found to calculate the distance between them. 
+
+This formula was applied in the **draw_distance(boxes)** function where we got all the bounding boxes of person class in a given frame from the model where each bounding is a regression value consisting **(x,y,w,h)** . Where x and y represent 2 co-ordinates of the person and w & h represent widh and height correspondingly. All combinations of boxes were found to calculate the distance between them. 
 
