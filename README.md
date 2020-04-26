@@ -3,6 +3,7 @@
 ## Introduction
 This repository holds the implementation of monitoring social distancing implied for COVID-19 using  [YOLACT: Real-time Instance Segmentation](https://arxiv.org/abs/1904.02689)) for object detection. 
 
+![Social Distancing Demo](http://muizzer07.pythonanywhere.com/media/files/social.gif)
 ## User Guideline
 **System Requirement**
 - For better performance you will cuda version 10 or 10.1
@@ -74,10 +75,14 @@ Social Distancing is a way of protecting yourself and others around you by knowi
  
 To measure distance between two person eucledian distance was used in this work. **Euclidean distance** or **Euclidean metric** is the "ordinary" [straight-line](https://en.wikipedia.org/wiki/Straight_line "Straight line")  [distance](https://en.wikipedia.org/wiki/Distance "Distance") between two points in [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space "Euclidean space"). 
 
-The **Euclidean distance** between two points **p** and **q** is the length of the [line segment](https://en.wikipedia.org/wiki/Line_segment "Line segment") connecting them [\overline{\mathbf{p}\mathbf{q}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/6d397a90d8e00a9fbb6e7eb908cda31009fde6ee)).
+The **Euclidean distance** between two points **p** and **q** is the length of the [line segment](https://en.wikipedia.org/wiki/Line_segment "Line segment") connecting them ![\overline{\mathbf{p}\mathbf{q}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/6d397a90d8e00a9fbb6e7eb908cda31009fde6ee).
 In the [Euclidean plane](https://en.wikipedia.org/wiki/Euclidean_plane "Euclidean plane"), if **p** = (_p_1, _p_2) and **q** = (_q_1, _q_2) then the distance is given by
 
 ![{\displaystyle d(\mathbf {p} ,\mathbf {q} )={\sqrt {(q_{1}-p_{1})^{2}+(q_{2}-p_{2})^{2}}}.}](https://wikimedia.org/api/rest_v1/media/math/render/svg/4febdae84cbc320c19dd13eac5060a984fd438d8)
 
 This formula was applied in the **draw_distance(boxes)** function where we got all the bounding boxes of person class in a given frame from the model where each bounding is a regression value consisting **(x,y,w,h)** . Where x and y represent 2 co-ordinates of the person and w & h represent widh and height correspondingly. All combinations of boxes were found to calculate the distance between them. 
 
+### Acknowlegement 
+Thanks to **Daniel Bolya** et. el for introducing Single Shot detection (SSD) implementation for segmentation in  [YOLACT](https://arxiv.org/abs/1904.02689) & [YOLACT++](https://arxiv.org/abs/1912.06218) as it becomes less memory hungry. 
+
+However, for more details on Object detection and Image understanding you can also visit [this repo](https://github.com/paul-pias/Object-Detection-and-Distance-Measurement) .
