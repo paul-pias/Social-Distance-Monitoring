@@ -2,7 +2,7 @@
 Cython == 0.29.16
 Flask == 1.1.1
 GPUtil == 1.4.0
-Pillow == 7.0.0
+Pillow>=7.1.0
 Werkzeug == 1.0.1
 gevent == 1.4.0
 imutils == 0.5.3
