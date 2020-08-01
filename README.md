@@ -54,7 +54,7 @@ Download the pre-trained weights and save in the folder **weights**, then from y
 Here 0 as id passed if you want to run the inference on webcam feed. If you don't parse any argument it will run with the default values. You can tweak the following values according to your preference. 
 
 
-|      Input          |Value                        |HTML                         |
+|      Input          |Value                        |Description                         |
 |----------------|-------------------------------|-----------------------------|
 |width, height |1280 x 720 |              
 |display_lincomb         |`False             
